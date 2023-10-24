@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <!-- <img src="./images/logo.png" class="logo"> -->
+                <h1 id="logo" class="logo"><span class="logo" >R</span>aiyan.</h1>
+                <ul id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="flex">
+                <div class="header-text">
+                    
+                    <h1>Hi, I'm Raiyan </h1>
+    
+                    <h5><span id="changing-text">Web Developer</span></h5>
+    
+                    <p>I design & build user interfaces. I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                   
+                    <a href="#contact"><button id="btn" class="btn btn2">Hire Me</button></a>
+    
+                   
+                </div>
+<div class="profile-img">
+<img src="/images/srk.jpg" alt="">
+</div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <!-- ------About----- -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aut facilis doloremque
+                        aspernatur vero natus? Rem, officiis iure. Laudantium enim saepe voluptate, totam non atque nam
+                        ratione possimus animi quae?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>.Net Developer</span><br>.NET Developer with a passion for learning and a solid
+                                foundation in C# and ASP.NET.</li>
+                            <li><span>Web development</span><br>Creating website using HTML,CSS,JS and Boostrap
+                                framework</li>
+                            <li><span>RWD</span><br>Building reponsive websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship</span><br>Aspira sytem</li>
+                            <li><span>College</span><br>Designings App development</li>
+                            <li><span>School</span><br>Building Andriod /IOS app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Internship</span><br>Aspirar system</li>
+                            <li><span>College</span><br>Islamiah college Vaniyambadi</li>
+                            <li><span>School</span><br>Oriental school, Ambur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------services------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Crafting engaging online experiences through design and development.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>RWD web design</h2>
+                    <p>Creating sites that adapt seamlessly to various devices for an optimal user experience.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web app</h2>
+                    <p>Building interactive and functional applications accessible through web browsers.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------portfolio----- -->
+
+    <div id="portfolio">
+        <div class="container">
+
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Experience real-time weather updates with our Weather App, i have created it using HTML, CSS, and JavaScript. Utilizing the Fetch API.</p>
+                        <a href="https://weatherroy.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Created music App website using html css js functions</p>
+                        <a href="https://roymusic.netlify.app"target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Restaurent website</h3>
+                        <p>A restaurant website built with HTML, CSS, JavaScript, and Bootstrap offers an attractive, user-friendly platform to display the menu, ambiance, and services, ensuring a visually appealing and responsive experience for visitors.</p>
+                        <a href="https://delightfulroy.netlify.app"target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn btn2">See more</a>
+
+
+
+        </div>
+
+    </div>
+
+<!-- -------Contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"> </i>  Kraiyan58@gmail.com</p>
+               <p><i class="fas fa-phone-square-alt"> </i>  9123503087</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./AS-Web Devlopment.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Namme" required>
+                <input type="email" name="Email" placeholder="Your Email">
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <a href=""><p><i class="copy fa-regular fa-copyright"></i><b>Created by Raiyan</b></p></a>
+    </div>
+</div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu")
+function openmenu(){
+    sidemenu.style.right ="0"
+}
+function closemenu(){
+    sidemenu.style.right ="-200px"
+}
+
+
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwkFvMKzcQ3bTFdyWzL6rZCyWUwcUgROqfYXEQOJ74UNWR7wjaUFK_1MDhCFu9XU0qz/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    const typed = new Typed('#changing-text', {
+  strings: ['Web Developer', 'Web Designer', '.Net Developer', 'Web App Developer'],
+  typeSpeed: 70,
+  backSpeed: 70,
+  loop: true
+});
+</script>
+
+
+
+</body>
+
+</html>
