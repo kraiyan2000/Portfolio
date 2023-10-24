@@ -572,3 +572,49 @@ display: none;
     margin-top: -40px;
     display: block;
 }
+
+/* scroll */
+
+#backToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  box-shadow: 0 0 5px gray;
+}
+
+#backToTopButton:hover {
+    background-color: #ff004f;
+}
+
+/* side bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff004f; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
