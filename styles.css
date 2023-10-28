@@ -618,3 +618,7 @@ display: none;
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+  .active{
+color: #ff004f;
+  }
